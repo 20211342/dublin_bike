@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>Simple Map</title> 
+    <meta name="viewport" content="initial-scale=1.0"> 
+    <meta charset="utf-8"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/css/dublinbikes_styles.css">
+    <script src="../static/javascript/dublinbikes.js"></script>
+  </head> 
+  <body id="body">
+    <header>
+      <div id="headbar">
+        <img src="../static/Image/bike.png" alt="bike poc">
+        <span id="firstUndLn"></span>
+        <h1>DUBLIN BIKES ASSISTANT</h1>
+        <span id="secondUndLn"></span>
+        <img src="../static/Image/marker.png" alt="maker pic">
+      </div>
+    </header>
+    <div id="weather">
+      <h1>Weather</h1>
+      
+      <div id="weatherType">
+        <img src="../static/Image/weather.png" height="100" width="100">
+        <h3>Temperature</h3>
+        <h3 id="temperature"></h3>
+        <h3>Weather Type</h3>
+        <p id="weathertype"></p>
+      </div>
+      <div id="weatherData">
+        <h3>Fellslike</h3>
+        <p id="fellslike"></p>
+        <h3>Humidity</h3>
+        <p id="humidity"></p>
+        <h3>Wind Degree</h3>
+        <p id="WindDegree"></p>
+        <h3>Wind Speed</h3>
+        <p id="WindSpeed"></p>
+
+      </div>
+    </div>
+
+    <div id="start">
+      <input id="start_input" type="text" value="start" />
+      <input id="current" type="button" value="use my current position"  />
+    </div>
+    <div id="end">
+      <input id="end_input" type="text" value="end" />
+    </div>
+
+    <div id="mode-selector" class="controls">
+      <h3>Travel Mode</h3>
+      <input
+        type="radio"
+        name="type"
+        id="changemode-walking"
+        checked="checked"
+        
+      />
+      <label for="changemode-walking">Walking</label>
+
+      <input type="radio" name="type" id="changemode-transit" />
+      <label for="changemode-transit">Transit</label>
+
+      <input type="radio" name="type" id="changemode-driving" />
+      <label for="changemode-driving">Driving</label>
+
+      <input type="radio" name="type" id="changemode-bicycling" />
+      <label for="changemode-bicycling">Bicycling</label>
+    </div>
+    <input id="find_origin_station" type="button" value="find nearest station"/>
+
+    <div id="warnings-panel"></div>
+
+
+    <input id="return_bike" type="button" value="where should I return the bike" />
+
+ 
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type=text/javascript>
+      // Set-up connection variable between JS and Flask server application
+      $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+    
+    <div id="map"></div> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH8-w9OpXSnHpvarF58SZQhyaKOjSOPUQ&callback=initMap&libraries=places" 
+    async defer></script> 
+
+
+  </body> 
+</html>

@@ -1,0 +1,5 @@
+USER="tianjiangzhang"
+PASSWORD="bohuicheng"
+URI="dbbikes.cehrlobjbfz.us-east-1.rds.amazonaws.com"
+PORT="3306"
+DB="dbbikes"

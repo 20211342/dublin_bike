@@ -1,0 +1,123 @@
+ 
+/* Always set the map height explicitly to define the size of the div 
+ * element that contains the map. */ 
+#body{
+  background-color:darkcyan;
+}
+#map { 
+  position: absolute;
+  top:20%;
+  right:23%;
+  height: 70%;
+  width:900px; 
+
+} 
+/* Optional: Makes the sample page fill the window. */ 
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+}
+#start{
+  position:absolute;
+  top: 20%;
+  left:4ch;
+
+} 
+#end{
+  position:absolute;
+  top:34%;
+  left:4ch;
+}
+#mode-selector{
+  position: absolute;
+  top: 22%;
+  left:4ch;
+}
+
+#find_origin_station{
+  position: absolute;
+  top:40%;
+  left:4ch;
+}
+
+#return_bike{
+  position: absolute;
+  top:45%;
+  left:4ch;
+}
+#station_by_distance{
+  position: absolute;
+  top:30%;
+  left: 4ch;
+}
+#mode-selector_2{
+  position: absolute;
+  top:50% ;
+  left:4ch;
+}
+#find_destination_station{
+  position: absolute;
+  top: 63%;
+  left:4ch;
+}
+
+#use_my_current_position{
+  position: absolute;
+  top:10%;
+  left:17ch;
+}
+
+#weather {
+  position: absolute;
+  left:80%;
+  top:20%;
+  height: 170px;
+  width: 400px;
+
+
+}
+#weatherData{
+  position:absolute;
+  left:15ch;
+}
+#weatherType{
+  position: absolute;
+  top:11ch;
+  
+}
+
+#headbar {
+  height: 35px;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+#headbar h1 {
+  height: 5vh;
+  line-height: 30px;
+  margin-top: 4px;
+  width: 350px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#headbar img {
+  height: 30px;
+  margin-right: 3px;
+}
+
+#headbar span {
+  border-bottom: 2px solid #eef0f2;
+  margin-bottom: 8px;
+}
+
+#firstUndLn {
+  width: 15%;
+}
+
+#secondUndLn {
+  width: 100%;
+}

@@ -1,0 +1,86 @@
+body {
+    background-image: url("../Image/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.login {
+    margin: 200px auto 0;
+    padding: 30px 60px;
+    background-color: rgba(0, 0, 0, 0.87);
+    width: 300px;
+    height: 300px;
+    text-align: center;
+
+}
+
+.login h1 {
+    color:black;
+    background-image: linear-gradient(to right, green, white, orange)
+
+}
+/* linear-gradient was learned from W3School */
+
+.login .login_box {
+
+    position: relative;
+    margin-top: 40px;
+}
+
+
+.login .login_box input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    color:white;
+    font-size: 16px;
+    border-bottom: 1px solid yellow;
+    background-color: transparent;
+
+}
+
+.login .login_box label {
+ position:absolute;
+ top: 0;
+ left: 0;
+ padding: 10px 0;
+ color: white;
+ pointer-events: none;
+ transition: all 0.3s;
+
+}
+
+.login .login_box input:focus + label,
+.login .login_box input:valid + label {
+
+top: -20px;
+color:greenyellow;
+font-size: 14px;
+
+}
+
+.login a{
+    position: relative;
+    left: -20px;
+    top:-20px;
+    padding: 20px 20px;
+    color:white;
+    text-decoration: none;
+    transition: all 0.3s;
+
+
+}
+
+.login a:hover{
+    border:  0;
+    width: 50px;
+    height: 25px;
+    color: red;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, green, white, orange);
+
+}
